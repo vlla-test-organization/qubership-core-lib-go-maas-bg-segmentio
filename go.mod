@@ -6,11 +6,11 @@ toolchain go1.23.1
 
 require (
 	github.com/docker/go-connections v0.5.0
-	github.com/netcracker/qubership-core-lib-go-bg-kafka/v3 v3.0.0-20250325084257-adfe6a17f59d
-	github.com/netcracker/qubership-core-lib-go-bg-state-monitor/v2 v2.0.0-20250325081841-bccb0a5a6592
-	github.com/netcracker/qubership-core-lib-go-maas-client/v3 v3.0.0-20250325062435-d68ff4674b68
-	github.com/netcracker/qubership-core-lib-go-maas-segmentio/v3 v3.0.0-20250325070217-b7acc26226a1
-	github.com/netcracker/qubership-core-lib-go/v3 v3.0.0-20250324061806-227fc2609b0a
+	github.com/netcracker/qubership-core-lib-go-bg-kafka/v3 v3.0.0-20250410110823-7e14c200dc04
+	github.com/netcracker/qubership-core-lib-go-bg-state-monitor/v2 v2.0.0-20250410105207-ba4bfd983c8d
+	github.com/netcracker/qubership-core-lib-go-maas-client/v3 v3.0.0-20250410104652-3cf8d92a547f
+	github.com/netcracker/qubership-core-lib-go-maas-segmentio/v3 v3.0.0-20250410112738-a235fd6d6731
+	github.com/netcracker/qubership-core-lib-go/v3 v3.0.0-20250410090100-eded4c69a462
 	github.com/segmentio/kafka-go v0.4.47
 	github.com/stretchr/testify v1.10.0
 	github.com/testcontainers/testcontainers-go v0.35.0
@@ -74,8 +74,8 @@ require (
 	github.com/moby/sys/user v0.1.0 // indirect
 	github.com/moby/term v0.5.0 // indirect
 	github.com/morikuni/aec v1.0.0 // indirect
-	github.com/netcracker/qubership-core-lib-go-rest-utils/v2 v2.0.0-20250324140029-6e57c35680eb // indirect
-	github.com/netcracker/qubership-core-lib-go-stomp-websocket/v3 v3.0.0-20250324154321-6abce3ddfc29 // indirect
+	github.com/netcracker/qubership-core-lib-go-rest-utils/v2 v2.0.0-20250410090425-f8bcf3d43e4a // indirect
+	github.com/netcracker/qubership-core-lib-go-stomp-websocket/v3 v3.0.0-20250410104403-5fc53287436a // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.1.0 // indirect
 	github.com/pierrec/lz4/v4 v4.1.18 // indirect
