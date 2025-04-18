@@ -66,6 +66,10 @@ func (m *msgAdapter) Topic() string {
 	return m.nativeMessage.Topic
 }
 
+func (m *msgAdapter) HighWaterMark() int64 {
+	return m.nativeMessage.HighWaterMark
+}
+
 func (m *msgAdapter) Offset() int64 {
 	return m.nativeMessage.Offset
 }
