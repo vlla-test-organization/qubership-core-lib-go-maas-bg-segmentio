@@ -13,6 +13,7 @@ for [segmentio/kafka-go](github.com/segmentio/kafka-go) native go client.
 * [Blue-Green for segmentio Kafka client](#blue-green-for-segmentio-kafka-client-)
   * [Usage examples](#usage-examples)
     * [Simple consumer creation and polling](#simple-consumer-creation-and-polling)
+    * [Metrics](#metrics)
   * [Migration to Blue Green 2](#migration-to-blue-green-2)
 <!-- TOC -->
 
@@ -95,6 +96,36 @@ func processMsg(ctx context.Context, consumer *bgKafka.BgConsumer, message bgKaf
 	return consumer.Commit(ctx, marker)
 }
 ~~~
+
+### Metrics
+
+Blue-green kafka consumer collects own metrics set.
+Metrics are updating on messages poll and offset commit (interaction with message broker).
+
+Values of each metric are split by partitions and contains data only from partitions assigned to this consumer.
+
+Metrics usage example:
+
+```go
+// Use Stats() method to receive metrics snapshot.
+metrics := consumer.Stats()
+
+// Call GetByPartitions() method for required metric to get map[int]in64, where key is a partition number
+lags := metrics.Lag.GetByPartitions()
+for partition, lag := range lags {
+    logger.Info("Lag on partition %d: %d", partition, lag)	
+}
+
+// Be aware that metric for each partition is updating on poll or commit. 
+// It means that before that after consumer init metrics may be empty 
+_, commitOffsetExists := metrics.CommitOffset.GetByPartitions()[0]
+if !commitOffsetExists {
+    logger.Info("No offest has been commited for partition 0 yet")
+}   
+```
+
+You can find full list of supported metrics and its description
+in [metrics.go](https://github.com/Netcracker/qubership-core-lib-go-bg-kafka/blob/main/metrics.go#L43)
 
 ## Migration to Blue Green 2
 See details [here](docs/migration.md)
