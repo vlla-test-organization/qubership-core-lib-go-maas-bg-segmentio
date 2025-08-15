@@ -4,13 +4,13 @@ import (
 	"context"
 	"testing"
 
-	blue_green_kafka "github.com/netcracker/qubership-core-lib-go-bg-kafka/v3"
-	bgKafkaTest "github.com/netcracker/qubership-core-lib-go-bg-kafka/v3/test"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/classifier"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/model"
-	segmentio "github.com/netcracker/qubership-core-lib-go-maas-segmentio/v3"
 	"github.com/segmentio/kafka-go"
 	"github.com/stretchr/testify/require"
+	blue_green_kafka "github.com/vlla-test-organization/qubership-core-lib-go-bg-kafka/v3"
+	bgKafkaTest "github.com/vlla-test-organization/qubership-core-lib-go-bg-kafka/v3/test"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/classifier"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/model"
+	segmentio "github.com/vlla-test-organization/qubership-core-lib-go-maas-segmentio/v3"
 )
 
 func TestBGConsumer(t *testing.T) {

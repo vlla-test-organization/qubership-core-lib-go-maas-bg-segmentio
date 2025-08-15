@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	bgKafka "github.com/netcracker/qubership-core-lib-go-bg-kafka/v3"
-	"github.com/netcracker/qubership-core-lib-go-maas-client/v3/kafka/model"
-	segmentio "github.com/netcracker/qubership-core-lib-go-maas-segmentio/v3"
 	"github.com/segmentio/kafka-go"
+	bgKafka "github.com/vlla-test-organization/qubership-core-lib-go-bg-kafka/v3"
+	"github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3/kafka/model"
+	segmentio "github.com/vlla-test-organization/qubership-core-lib-go-maas-segmentio/v3"
 )
 
 type adminAdapter struct {
