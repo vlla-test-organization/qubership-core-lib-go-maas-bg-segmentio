@@ -11,11 +11,11 @@ require (
 	github.com/segmentio/kafka-go v0.4.47
 	github.com/stretchr/testify v1.10.0
 	github.com/testcontainers/testcontainers-go v0.35.0
-	github.com/vlla-test-organization/qubership-core-lib-go-bg-kafka/v3 v3.0.9
-	github.com/vlla-test-organization/qubership-core-lib-go-bg-state-monitor/v2 v2.0.9
-	github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3 v3.0.9
-	github.com/vlla-test-organization/qubership-core-lib-go-maas-segmentio/v3 v3.0.9
-	github.com/vlla-test-organization/qubership-core-lib-go/v3 v3.0.32
+	github.com/vlla-test-organization/qubership-core-lib-go-bg-kafka/v3 v3.0.10
+	github.com/vlla-test-organization/qubership-core-lib-go-bg-state-monitor/v2 v2.0.10
+	github.com/vlla-test-organization/qubership-core-lib-go-maas-client/v3 v3.0.10
+	github.com/vlla-test-organization/qubership-core-lib-go-maas-segmentio/v3 v3.0.10
+	github.com/vlla-test-organization/qubership-core-lib-go/v3 v3.0.33
 )
 
 require (
@@ -89,8 +89,8 @@ require (
 	github.com/tklauser/go-sysconf v0.3.12 // indirect
 	github.com/tklauser/numcpus v0.6.1 // indirect
 	github.com/viney-shih/go-lock v1.1.2 // indirect
-	github.com/vlla-test-organization/qubership-core-lib-go-rest-utils/v2 v2.0.9 // indirect
-	github.com/vlla-test-organization/qubership-core-lib-go-stomp-websocket/v3 v3.0.9 // indirect
+	github.com/vlla-test-organization/qubership-core-lib-go-rest-utils/v2 v2.0.10 // indirect
+	github.com/vlla-test-organization/qubership-core-lib-go-stomp-websocket/v3 v3.0.10 // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
 	github.com/xdg-go/scram v1.1.2 // indirect
 	github.com/xdg-go/stringprep v1.0.4 // indirect
