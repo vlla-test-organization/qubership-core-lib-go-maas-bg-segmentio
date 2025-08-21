@@ -1,6 +1,6 @@
 module github.com/vlla-test-organization/qubership-core-lib-go-maas-bg-segmentio/v3
 
-go 1.23.0
+go 1.23
 
 toolchain go1.23.1
 
